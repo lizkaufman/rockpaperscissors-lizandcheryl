@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Indie+Flower|Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <h1>ROCK PAPER SCISSORS</h1>
+    <div id="game-container">
+      <section id="game-start">
+        <p id="game-start-text">
+          Let's play rock, paper, scissors! What's your name?
+        </p>
+        <input id="name-input" name="username" type="text" />
+        <button id="username-button">Submit</button>
+      </section>
+
+      <section id="game-play">
+        <p>Make your move, <span id="username-top"> </span>:</p>
+        <button class="player-move-buttons" id="rock-button">Rock</button>
+        <button class="player-move-buttons" id="paper-button">Paper</button>
+        <button class="player-move-buttons" id="scissors-button">
+          Scissors
+        </button>
+      </section>
+
+      <section id="game-results">
+        <p>The computer's move is: <span id="computer-move"> </span></p>
+        <p id="winner">Let's see who the winner is!</p>
+      </section>
+
+      <section id="game-scoreboard">
+        <p><span id="username-scores"> </span>'s scores so far:</p>
+        <table id="score-table">
+          <tr>
+            <th>Player wins</th>
+            <th>Computer wins</th>
+            <th>Draws</th>
+          </tr>
+          <tr>
+            <td id="player-wins">0</td>
+            <td id="comp-wins">0</td>
+            <td id="draws">0</td>
+          </tr>
+        </table>
+      </section>
+
+      <section id="game-history">
+        <p>
+          You've played <span id="total-rounds">0</span> rounds. Game history:
+        </p>
+        <ol id="history"></ol>
+      </section>
+
+      <br />
+      <br />
+      <script src="rps2.js"></script>
+    </div>
+  </body>
+</html>

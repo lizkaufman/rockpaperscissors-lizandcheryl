@@ -1,0 +1,76 @@
+body {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(253, 187, 45, 1) 0%,
+    rgba(34, 193, 195, 1) 100%
+  );
+}
+
+button {
+  margin: 5px;
+  background: #fdc830; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f37335,
+    #fdc830
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f37335,
+    #fdc830
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  transition: transform 0.5s;
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+}
+
+button:hover {
+  background: rgba(243, 116, 53, 0.719);
+  transform: scale(1.2);
+}
+
+th,
+td {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Bowlby One SC', cursive;
+  text-align: center;
+  margin-top: 40px;
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  width: 500px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+section {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+table {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(240, 255, 255, 0.3);
+}
+
+#game-play {
+  background-color: rgba(240, 255, 255, 0.3);
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5px;
+  padding-bottom: 12px;
+}
+
+#history {
+  list-style-position: inside;
+}
