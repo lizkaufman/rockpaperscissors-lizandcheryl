@@ -31,6 +31,7 @@ function handleUsername() {
   Basically, he used input.value with the above and then plugged it into display.
 }
 */
+
 function generateComputerMove() {
   //var computerMove = document.getElementById("computer-move");
   let randomNumber = Math.random();
@@ -78,15 +79,15 @@ function playGame(playerMove) {
 
   if (playerMove === 'rock') {
     if (computerMove === 'rock') {
-      showWinner('draw');
+      showWinner("It's a draw.");
       console.log('draw');
       scoreKeeping(0);
     } else if (computerMove === 'paper') {
-      showWinner('computer wins');
+      showWinner('The computer won.');
       console.log('computer wins');
       scoreKeeping(1);
     } else if (computerMove === 'scissors') {
-      showWinner('player wins');
+      showWinner('You won!');
       console.log('player wins');
       scoreKeeping(2);
     }
@@ -101,15 +102,15 @@ function playGame(playerMove) {
 
   if (playerMove === 'paper') {
     if (computerMove === 'rock') {
-      showWinner('player wins');
+      showWinner('You won!');
       console.log('player wins');
       scoreKeeping(2);
     } else if (computerMove === 'paper') {
-      showWinner('draw');
+      showWinner("It's a draw.");
       console.log('draw');
       scoreKeeping(0);
     } else if (computerMove === 'scissors') {
-      showWinner('computer wins');
+      showWinner('The computer won.');
       console.log('computer wins');
       scoreKeeping(1);
     }
@@ -124,15 +125,15 @@ function playGame(playerMove) {
 
   if (playerMove === 'scissors') {
     if (computerMove === 'rock') {
-      showWinner('computer wins');
+      showWinner('The computer won.');
       scoreKeeping(1);
       console.log('computer wins');
     } else if (computerMove === 'paper') {
-      showWinner('player wins');
+      showWinner('You won!');
       scoreKeeping(2);
       console.log('player wins');
     } else if (computerMove === 'scissors') {
-      showWinner('draw');
+      showWinner("It's a draw.");
       scoreKeeping(0);
       console.log('draw');
     }
@@ -228,7 +229,7 @@ function updateScoreBoard(updatedScore, scoreId) {
   document.getElementById(scoreId).innerText = score[scoreId];
 }
 
-/* Chris's way for scoreboard:
+/* Chris's ways for scoreboard:
 
 Less good way (messy in HTML):
 In each if statement in playGame:

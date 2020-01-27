@@ -5,6 +5,17 @@ body {
     rgba(253, 187, 45, 1) 0%,
     rgba(34, 193, 195, 1) 100%
   );
+  font-family: 'Roboto Condensed', sans-serif;
+  width: 500px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+#game-container {
+  display: flex;
+  height: 60vh;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 button {
@@ -40,20 +51,14 @@ td {
 h1 {
   font-family: 'Bowlby One SC', cursive;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 30px;
+  margin-bottom: 0;
 }
 
-body {
-  font-family: 'Roboto Condensed', sans-serif;
-  width: 500px;
-  text-align: center;
-  box-sizing: border-box;
-}
-
-section {
+/*section {
   margin-top: 30px;
   margin-bottom: 30px;
-}
+}*/
 
 table {
   display: inline-block;
@@ -69,6 +74,11 @@ table {
   margin-right: auto;
   padding-top: 5px;
   padding-bottom: 12px;
+}
+
+#game-history {
+  margin-top: 35px;
+  margin-bottom: 35px;
 }
 
 #history {

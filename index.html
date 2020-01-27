@@ -30,17 +30,20 @@
       </section>
 
       <section id="game-results">
-        <p>The computer's move is: <span id="computer-move"> </span></p>
+        <p>
+          The computer's move is
+          <span id="computer-move">waiting on you..</span>.
+        </p>
         <p id="winner">Let's see who the winner is!</p>
       </section>
 
       <section id="game-scoreboard">
-        <p><span id="username-scores"> </span>'s scores so far:</p>
+        <p><span id="username-scores">Player</span>'s scores so far:</p>
         <table id="score-table">
           <tr>
-            <th>Player wins</th>
-            <th>Computer wins</th>
-            <th>Draws</th>
+            <th>Your wins:</th>
+            <th>Computer's wins:</th>
+            <th>Draws:</th>
           </tr>
           <tr>
             <td id="player-wins">0</td>
@@ -49,17 +52,13 @@
           </tr>
         </table>
       </section>
-
-      <section id="game-history">
-        <p>
-          You've played <span id="total-rounds">0</span> rounds. Game history:
-        </p>
-        <ol id="history"></ol>
-      </section>
-
-      <br />
-      <br />
-      <script src="rps2.js"></script>
     </div>
+    <section id="game-history">
+      <p>
+        You've played <span id="total-rounds">0</span> rounds. Game history:
+      </p>
+      <ol id="history"></ol>
+    </section>
+    <script src="rps2.js"></script>
   </body>
 </html>
